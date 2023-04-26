@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/845ae26aa3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bill Splitter</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="product-list-container">
+        <h2>Purchased Items</h2>
+        <ul class="product-list">
+          <li class="list-item"
+            ><div>Product</div>
+            <div>Quantity</div>
+            <div>Price</div></li
+          >
+          <hr />
+        </ul>
+        <h3 class="total"></h3>
+        <div class="bill-split-container">
+          <div class="form-group">
+            <label for="number-of-people">No. of people</label>
+            <input type="text" class="number-of-people" />
+          </div>
+          <a href="#" class="btn-split" onclick="splitBill()">Split the Bill</a>
+        </div>
+        <div>
+          <p class="per-person-output"></p>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <a href="#" class="btn-cart"
+        ><i class="fa-solid fa-cart-shopping"></i
+        ><span class="badge">0</span></a
+      >
+    </nav>
+    <main class="main">
+      <div class="row">
+        <div class="card">
+          <img src="assets/img/cheeseburger.png" alt="" />
+          <div class="product-text">
+            <p class="title">Cheese Burger</p>
+            <p class="price">$6</p>
+            <div class="quantity-container"
+              ><i class="fa-solid fa-minus minus"></i
+              ><input type="text" class="quantity" value="1" /><i
+                class="fa-solid fa-plus plus"
+              ></i
+            ></div>
+            <a href="#" class="add-to-cart">Add to cart</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/Hamburger.png" alt="" />
+          <div class="product-text">
+            <p class="title">Hamburger</p>
+            <p class="price">$10</p>
+            <div class="quantity-container"
+              ><i class="fa-solid fa-minus minus"></i
+              ><input type="text" class="quantity" value="1" /><i
+                class="fa-solid fa-plus plus"
+              ></i
+            ></div>
+            <a href="#" class="add-to-cart">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card">
+          <img src="assets/img/McChicken.png" alt="" />
+          <div class="product-text">
+            <p class="title">McChicken</p>
+            <p class="price">$11</p>
+            <div class="quantity-container"
+              ><i class="fa-solid fa-minus minus"></i
+              ><input type="text" class="quantity" value="1" /><i
+                class="fa-solid fa-plus plus"
+              ></i
+            ></div>
+            <a href="#" class="add-to-cart">Add to cart</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/whopper.png" alt="" />
+          <div class="product-text">
+            <p class="title">Whopper</p>
+            <p class="price">$12</p>
+            <div class="quantity-container"
+              ><i class="fa-solid fa-minus minus"></i
+              ><input type="text" class="quantity" value="1" /><i
+                class="fa-solid fa-plus plus"
+              ></i
+            ></div>
+            <a href="#" class="add-to-cart">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
