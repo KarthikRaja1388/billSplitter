@@ -85,7 +85,8 @@ btnCart.addEventListener("click", (event) => {
   total.innerHTML = "Total: $" + totalAmount;
 });
 
-function splitBill() {
+function splitBill(e) {
+  e.preventDefault();
   let numberOfPeopleInput = document.querySelector(".number-of-people");
 
   let str = total.textContent;
